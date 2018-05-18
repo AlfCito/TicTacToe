@@ -11,8 +11,11 @@ body{
 	align-items: center;
 }
 
-#player{
+#player,
+#result{
 	color: white;
+	height: 30px;
+	margin-top: .5rem;
 }
 
 #board{
@@ -33,10 +36,15 @@ body{
 button{
 	width: 100px;
 	height: 100px;
+	padding: 0px;
 	background: none;
 	border: none;
 	cursor: pointer;
 	font-size: 3em;
+}
+
+button:focus {
+	outline:0;
 }
 
 #c01, #c04, #c07{
@@ -47,4 +55,47 @@ button{
 #c03, #c04, #c05{
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+}
+
+.hor:after{
+	content: "";
+	position: relative;
+	display: block;
+	top: -35px;
+	width: 105px;
+	border: 5px solid red;
+}
+
+.ver:after{
+	content: "";
+	position: relative;
+	display: block;
+	top: -35px;
+	width: 105px;
+	transform: rotate(90deg);
+	border: 5px solid red;
+}
+
+.eastWest:after{
+	content: "";
+	position: relative;
+	display: block;
+	top: -35px;
+	left: -20px;
+	border: 5px solid red;
+	height: 0px;
+	width: 142px;
+	transform: rotate(45deg);
+}
+
+.westEast:after{
+	content: "";
+	position: relative;
+	display: block;
+	top: -35px;
+	left: -20px;
+	border: 5px solid rgba(255,0,0,0.8);
+	height: 0px;
+	width: 142px;
+	transform: rotate(-45deg);
 }

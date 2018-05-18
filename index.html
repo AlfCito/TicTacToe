@@ -23,7 +23,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="charModalLabel">Please choose a character</h5>
+					<h5 class="modal-title" id="charModalLabel">Please choose a team</h5>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" id="btnX" data-dismiss="modal">X</button>
@@ -34,26 +34,37 @@
 	</div>
 
 	<div id="game">
+
 		<div>
 			<h4 id="player"></h4>
 		</div>
+
 		<div id="board">
 			<div class="rows">
-				<button id="c00" class="btns" value="c00"></button>
-				<button id="c01" class="btns" value="c01"></button>
-				<button id="c02" class="btns" value="c02"></button>
+				<button id="c00" class="btns" value="0"></button>
+				<button id="c01" class="btns" value="1"></button>
+				<button id="c02" class="btns" value="2"></button>
 			</div>
 			<div class="rows">
-				<button id="c03" class="btns" value="c03"></button>
-				<button id="c04" class="btns" value="c04"></button>
-				<button id="c05" class="btns" value="c05"></button>
+				<button id="c03" class="btns" value="3"></button>
+				<button id="c04" class="btns" value="4"></button>
+				<button id="c05" class="btns" value="5"></button>
 			</div>
 			<div class="rows">
-				<button id="c06" class="btns" value="c06"></button>
-				<button id="c07" class="btns" value="c07"></button>
-				<button id="c08" class="btns" value="c08"></button>
+				<button id="c06" class="btns" value="6"></button>
+				<button id="c07" class="btns" value="7"></button>
+				<button id="c08" class="btns" value="8"></button>
 			</div>
 		</div>
+
+		<div>
+			<h4 id="result"></h4>
+		</div>
+
+		<div>
+			<button type="button" class="btn btn-secondary" id="reset">RESTART</button>
+		</div>
+
 	</div>
 </body>
 </html>
