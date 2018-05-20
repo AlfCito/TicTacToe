@@ -2,6 +2,21 @@ body{
 	background-color: grey;
 }
 
+.modal-footer,
+.modal-header{
+	justify-content: center;
+}
+
+.modal-body{
+	display: flex;
+	justify-content: space-around;
+}
+
+#btnX,
+#btnO{
+	font-size: 3em;
+}
+
 #game{
 	height: 100vh;
 	width: 100vw;
@@ -62,6 +77,7 @@ button:focus {
 	position: relative;
 	display: block;
 	top: -35px;
+	left: 10px;
 	width: 105px;
 	border: 5px solid red;
 }
@@ -71,6 +87,7 @@ button:focus {
 	position: relative;
 	display: block;
 	top: -35px;
+	left: -2.5px;
 	width: 105px;
 	transform: rotate(90deg);
 	border: 5px solid red;
@@ -98,4 +115,25 @@ button:focus {
 	height: 0px;
 	width: 142px;
 	transform: rotate(-45deg);
+}
+
+#footer{
+	width: 100%;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+#settings,
+#reset{
+	height: 50px;
+	margin: 0px 50px;
+}
+
+#info{
+	height: 20px;
+	margin-top: 25px;
+	font-weight: 100;
+	color: white;
+	letter-spacing: 0.05em;
 }

@@ -23,11 +23,21 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="charModalLabel">Please choose a team</h5>
+					<h5 class="modal-title" id="charModalLabel">Please choose your level and a team</h5>
+				</div>
+				<div class="modal-body">
+					<div class="custom-control custom-radio">
+						<input type="radio" id="babyLevel" name="customRadioInline1" class="custom-control-input" checked>
+						<label class="custom-control-label" for="babyLevel">Easy "Baby" Level</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="godLevel" name="customRadioInline1" class="custom-control-input">
+						<label class="custom-control-label" for="godLevel">God Level ( Unbeatable! )</label>
+					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" id="btnX" data-dismiss="modal">X</button>
-					<button type="button" class="btn btn-secondary" id="btnO" data-dismiss="modal">0</button>
+					<button type="button" class="btn btn-primary" id="btnX" data-dismiss="modal">X</button>
+					<button type="button" class="btn btn-primary" id="btnO" data-dismiss="modal">0</button>
 				</div>
 			</div>
 		</div>
@@ -58,10 +68,11 @@
 		</div>
 
 		<div>
-			<h4 id="result"></h4>
+			<h6 id="info"></h6>
 		</div>
 
-		<div>
+		<div id="footer">
+			<button type="button" class="btn btn-secondary" id="settings">SETTINGS</button>
 			<button type="button" class="btn btn-secondary" id="reset">RESTART</button>
 		</div>
 
